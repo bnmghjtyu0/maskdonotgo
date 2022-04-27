@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import './App.css';
 
 const App = () => {
-  document.title = '口罩哩麥造'
+  document.title = '快篩實名制藥局地圖'
   return (
     <Home />
   )
