@@ -10,7 +10,7 @@ import Papa from "papaparse";
  * 口罩藥局清單來源
  * @see https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json
  */
-let maskUrl = "/assets/mask.json";
+let maskUrl = "./assets/mask.json";
 
 const Home = () => {
   const [maskDatas, setMaskDatas] = React.useState<Array<any>>([]);
@@ -22,7 +22,7 @@ const Home = () => {
    */
   const fetchCsv = () => {
     // 檔案路徑 public/assets/abc.csv
-    return fetch("/assets/rapid-test.csv").then(function (response: any) {
+    return fetch("./assets/rapid-test.csv").then(function (response: any) {
       let reader = response.body.getReader();
       let decoder = new TextDecoder("utf-8");
 
